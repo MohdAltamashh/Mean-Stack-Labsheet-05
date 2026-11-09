@@ -1,0 +1,2 @@
+ng g m admin --routing
+ng g c admin/admin-home --standalone=false

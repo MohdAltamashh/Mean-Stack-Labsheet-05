@@ -1,0 +1,2 @@
+import {Routes} from '@angular/router';import {HomeComponent,AboutComponent,ProductListComponent,ProductDetailComponent,DashboardComponent,NotFoundComponent} from './pages';
+export const routes:Routes=[{path:'',component:HomeComponent},{path:'about',component:AboutComponent},{path:'products',component:ProductListComponent},{path:'products/:id',component:ProductDetailComponent},{path:'dashboard',component:DashboardComponent,children:[{path:'profile',component:ProfileComponent},{path:'settings',component:SettingsComponent}]},{path:'**',component:NotFoundComponent}];
